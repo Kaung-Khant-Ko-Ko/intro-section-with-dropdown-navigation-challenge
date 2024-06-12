@@ -12,17 +12,31 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
     <nav class="navigation-container">
-      <ul>
-        <li><img src="./images/logo.svg" alt="Logo" /></li>
-        <li>
-          <a href="#"
-            >Features <img src="./images/icon-arrow-down.svg" alt="Down arrow"
-          /></a>
-          <ul class="navigation__dropdown">
+      <a href="" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
+      <ul class="navigation__list">
+        <li class="list__item">
+          <div id="list__button--features">
+            Features
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="Down arrow"
+              id="features__button"
+            />
+          </div>
+          <ul id="features__list" class="navigation__dropdown">
             <li>
               <a href="#"
                 ><img src="./images/icon-todo.svg" alt="To do icon" /> Todo
@@ -49,37 +63,40 @@
             </li>
           </ul>
         </li>
-        <li>
-          <a href="#"
-            >Company <img src="./images/icon-arrow-down.svg" alt="Down arrow"
-          /></a>
-          <ul class="navigation__dropdown">
+        <li class="list__item">
+          <div id="list__button--company">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt="Down arrow"
+              id="company__button"
+            />
+          </div>
+          <ul id="company__list" class="navigation__dropdown">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </li>
-        <li>Careers</li>
-        <li>About</li>
-        <li>
-          <div class="navigation__button-container">
-            <a href="#" class="button__login">Login</a>
-            <a href="#" class="button__register">Register</a>
-          </div>
-        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
       </ul>
+      <div class="navigation__button-container">
+        <a href="#" class="button__login">Login</a>
+        <a href="#" class="button__register">Register</a>
+      </div>
     </nav>
-    <main>
-      <div>
-        <div>
-          <h1>Make remote work</h1>
-          <p>
+    <main class="main-container">
+      <div class="main__content-container">
+        <div class="main__text-container">
+          <h1 class="text__title">Make remote work</h1>
+          <p class="text__desc">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <a href="#">Learn more</a>
+          <a href="#" class="text__button">Learn more</a>
         </div>
-        <div>
+        <div class="main__client-container">
           <img src="./images/client-databiz.svg" alt="Databiz client logo" />
           <img
             src="./images/client-audiophile.svg"
@@ -92,7 +109,10 @@
       <img
         src="./images/image-hero-desktop.png"
         alt="Image of a person using a laptop"
+        class="main__image"
       />
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
