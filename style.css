@@ -130,9 +130,13 @@ p {
 }
 
 .text__title {
-  font-size: 5rem;
+  font-size: 4.75rem;
   font-weight: 700;
   color: hsl(0, 0%, 8%);
+}
+
+.text__desc {
+  line-height: 1.5rem;
 }
 
 .text__button {
