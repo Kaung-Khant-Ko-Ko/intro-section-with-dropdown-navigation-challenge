@@ -163,3 +163,78 @@ p {
 .main__image {
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main__text-container {
+    gap: 30px;
+  }
+
+  .text__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main__text-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main__text-container {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    font-size: 18px;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 0px;
+  }
+
+  .main__image {
+    content: url("./images/image-hero-mobile.png");
+  }
+
+  .main__content-container {
+    order: 1;
+    padding: 0px 9.03%;
+    padding-bottom: 20px;
+    grid-template-rows: auto auto;
+  }
+
+  .main__text-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .text__title {
+    font-size: 4.75rem;
+  }
+
+  .text__desc {
+    margin: 20px 0px;
+  }
+
+  .main__client-container {
+    margin-top: 30px;
+  }
+}
