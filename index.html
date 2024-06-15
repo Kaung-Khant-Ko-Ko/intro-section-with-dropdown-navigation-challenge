@@ -26,7 +26,7 @@
   <body>
     <nav class="navigation-container">
       <a href="" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
-      <ul class="navigation__list">
+      <ul id="nav-list" class="navigation__list">
         <li class="list__item">
           <div id="list__button--features">
             Features
@@ -81,31 +81,34 @@
         <li><a href="#">Careers</a></li>
         <li><a href="#">About</a></li>
       </ul>
-      <div class="navigation__button-container">
+      <div id="nav-btn-list" class="navigation__button-container">
         <a href="#" class="button__login">Login</a>
         <a href="#" class="button__register">Register</a>
       </div>
-      <button class="navigation__button">
+      <button id="open-btn" class="navigation__button">
         <img src="./images/icon-menu.svg" alt="Menu icon" />
       </button>
     </nav>
-    <aside class="sidebar-container">
+    <aside id="sidebar" class="sidebar-container">
       <div class="sidebar__cover"></div>
       <div class="sidebar__content">
-        <button class="sidebar__button">
+        <button id="close-btn" class="sidebar__button">
           <img src="./images/icon-close-menu.svg" alt="Close menu icon" />
         </button>
         <ul class="sidebar__list">
           <li class="sidebar__item">
-            <div id="sidebar-list__button--features">
+            <div id="sidebar__button--features">
               Features
               <img
                 src="./images/icon-arrow-down.svg"
                 alt="Down arrow"
-                id="features__button"
+                id="features__button--sidebar"
               />
             </div>
-            <ul id="features__list" class="navigation__dropdown">
+            <ul
+              id="features__list--sidebar"
+              class="navigation__dropdown--sidebar"
+            >
               <li>
                 <a href="#"
                   ><img src="./images/icon-todo.svg" alt="To do icon" /> Todo
@@ -136,15 +139,18 @@
             </ul>
           </li>
           <li class="sidebar__item">
-            <div id="list__button--company">
+            <div id="sidebar__button--company">
               Company
               <img
                 src="./images/icon-arrow-down.svg"
                 alt="Down arrow"
-                id="company__button"
+                id="company__button--sidebar"
               />
             </div>
-            <ul id="company__list" class="navigation__dropdown">
+            <ul
+              id="company__list--sidebar"
+              class="navigation__dropdown--sidebar"
+            >
               <li><a href="#">History</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Blog</a></li>
