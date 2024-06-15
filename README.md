@@ -12,6 +12,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Screenshot
 
+![result](https://github.com/Kaung-Khant-Ko-Ko/intro-section-with-dropdown-navigation-challenge/assets/59255928/0d98764d-7bca-4fc4-820c-fc201f3cb517)
 
 ### Links
 
